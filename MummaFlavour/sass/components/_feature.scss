@@ -1,0 +1,16 @@
+.feature-box {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(233, 233, 245);
+  text-align: center;
+  transition: all 0.2s;
+  &_icon {
+    font-size: 6rem;
+  }
+  &:hover {
+    transform: translateY(-2rem) scale(1.1);
+    background-color: yellowgreen;
+    color: black;
+    text-shadow: 0 1rem 1.5rem black;
+  }
+}

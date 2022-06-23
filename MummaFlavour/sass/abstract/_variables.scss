@@ -1,0 +1,27 @@
+//colors
+$color-primary: #90cbee;
+$color-sec: #0f021d4d;
+$color-tert: #db0fdb80;
+$color-text-shadow: #4e2f4f;
+$color-white: white;
+$color-black: black;
+$color-darkGrey: darkgrey;
+$color-grey-light-1: #fcf8f8;
+$color-Linear-shade-1: linear-gradient(
+  to right,
+  rgba(146, 22, 74, 0.986),
+  rgba(146, 0, 61, 0.986),
+  rgba(236, 68, 130, 0.986)
+);
+$color-Linear-shade: linear-gradient(
+  to right,
+  rgba(146, 22, 74, 0.5),
+  rgba(146, 0, 61, 0.5),
+  rgba(236, 68, 130, 0.5)
+);
+
+// margins
+
+$margin-vertical: 8rem;
+$margin-vertical-small: 4rem;
+$margin-horizontal: 3rem;

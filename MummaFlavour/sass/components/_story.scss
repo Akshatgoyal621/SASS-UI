@@ -1,0 +1,56 @@
+.story {
+  width: 75%;
+  background-color: #fff;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(-12deg);
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &_shape {
+    width: 15rem;
+    height: 15rem;
+
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(35% at 50% 50%);
+    position: relative;
+  }
+  &_text {
+    color: #000;
+  }
+  &_img {
+    width: 100%;
+
+    transform: translate(-3px, -30px) scale(1.4);
+    &-1 {
+      transform: translate(-12px, 40px) scale(1.4);
+    }
+  }
+
+  &_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    backface-visibility: hidden;
+    text-align: center;
+  }
+
+  &:hover &_caption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  &:hover &_img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+}
